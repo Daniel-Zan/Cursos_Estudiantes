@@ -5,3 +5,4 @@ export interface EstudianteResponse {
     mensaje: string;
     data: Estudiante[];
 }
+ 

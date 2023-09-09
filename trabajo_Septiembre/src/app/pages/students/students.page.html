@@ -10,4 +10,13 @@
       <ion-title size="large">students</ion-title>
     </ion-toolbar>
   </ion-header>
+  <div>
+    <app-curso [titulo]="tituloBoton" (enviarListaCurso)="recibirListaCurso($event)">
+    </app-curso>
+    <div *ngFor="let item of listaC">
+      {{item.nombreCurso}}
+    </div>
+  </div>
+  <ion-button (click)="navigateToCoursesPage()">Ir a Cursos</ion-button>
 </ion-content>
+  

@@ -10,10 +10,13 @@
       <ion-title size="large">courses</ion-title>
     </ion-toolbar>
   </ion-header>
+
+
   <div>
     <app-compartidos [titulo]="tituloBoton" (enviarLista)="recibirLista($event)"></app-compartidos>
     <div *ngFor="let item of ListaE">
       {{item.nombre}}
-    </div>
+    </div> 
   </div>
+  <ion-button (click)="navigateToStudentsPage()">Ir a Estudiantes</ion-button>
 </ion-content>
